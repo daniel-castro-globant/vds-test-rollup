@@ -1,6 +1,6 @@
 {
   "name": "@vds/button",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "> TODO: description",
   "author": "Daniel Castro <johndaniel.castro@globant.com>",
   "homepage": "",
@@ -18,7 +18,7 @@
     "react-dom": "^18.2.0"
   },
   "files": [
-    "src"
+    "dist"
   ],
   "main": "dist/main.js"
 }
