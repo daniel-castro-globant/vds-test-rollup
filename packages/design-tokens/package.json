@@ -1,6 +1,6 @@
 {
   "name": "@vds/design-tokens",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "> TODO: description",
   "author": "Daniel Castro <johndaniel.castro@globant.com>",
   "homepage": "",
@@ -12,10 +12,10 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "dependencies": {
+  "devDependencies": {
     "style-dictionary": "^3.7.1"
   },
   "files": [
-    "build"
+    "dist"
   ]
 }
