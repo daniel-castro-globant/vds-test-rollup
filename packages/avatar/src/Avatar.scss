@@ -1,0 +1,7 @@
+@import '~@vds/design-tokens/dist/scss/variables';
+
+.vds-avatar {
+    border-radius: 100%;
+    padding: $vds-spacing-600;
+    background-color: $vds-color-celestialsphere; 
+}
