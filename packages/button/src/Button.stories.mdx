@@ -1,0 +1,137 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import Button from './Button';
+
+<Meta title="MDX/Button" component={Button} />
+
+export const Template = (args) => <Button {...args } />
+
+# Button
+
+**Overview:** [Zeroheight](https://zeroheight.com/6cad7b420/v/latest/p/91638b-21-buttons/b/28c103)<br/>
+**Web specifics:** [Zeroheight](https://zeroheight.com/6cad7b420/v/latest/p/91638b-21-buttons/b/09d7b1)<br/>
+**Design mockup:** [Figma](https://www.figma.com/file/LuEmvCRbZSmBwSHFJXSDpF/Web-Library?node-id=2%3A2)<br/>
+
+## Primary
+
+**Reference:** [Zeroheight](https://zeroheight.com/6cad7b420/p/91638b-21-buttons/t/411722)<br/>
+**Design mockup:** [Figma](https://www.figma.com/file/LuEmvCRbZSmBwSHFJXSDpF/Web-Library?node-id=2%3A2)<br/>
+
+<Canvas>
+    <Story
+        name="Primary"
+        args={{
+            text: 'Button'
+        }}
+    >
+        {Template.bind({})}
+    </Story>
+    <Story
+        name="Primary - Small"
+        args={{
+            text: 'Button',
+            isSmall: true
+        }}
+    >
+        {Template.bind({})}
+    </Story>
+    <Story
+        name="Primary - Disabled"
+        args={{
+            text: 'Button',
+            type: 'disabled'
+        }}
+    >
+        {Template.bind({})}
+    </Story>
+    <Story
+        name="Primary - Disabled - Small"
+        args={{
+            text: 'Button',
+            type: 'disabled',
+            isSmall: true
+        }}
+    >
+        {Template.bind({})}
+    </Story>
+</Canvas>
+
+## Secondary
+
+**Reference:** [Zeroheight](https://zeroheight.com/6cad7b420/p/91638b-21-buttons/t/700233)<br/>
+**Design mockup:** [Figma](https://www.figma.com/file/LuEmvCRbZSmBwSHFJXSDpF/Web-Library?node-id=1147%3A32688)<br/>
+
+<Canvas>
+    <Story
+        name="Secondary"
+        args={{
+            text: 'Button',
+            type: 'secondary'
+        }}
+    >
+        {Template.bind({})}
+    </Story>
+    <Story
+        name="Secondary - Small"
+        args={{
+            text: 'Button',
+            type: 'secondary',
+            isSmall: true
+        }}
+    >
+        {Template.bind({})}
+    </Story>
+</Canvas>
+
+## Tertiary
+
+**Reference:** [Zeroheight](https://zeroheight.com/6cad7b420/p/91638b-21-buttons/t/22b1dd)<br/>
+**Design mockup:** [Figma](https://www.figma.com/file/LuEmvCRbZSmBwSHFJXSDpF/Web-Library?node-id=1147%3A32688)<br/>
+
+<Canvas>
+    <Story
+        name="Tertiary"
+        args={{
+            text: 'Button',
+            type: 'tertiary'
+        }}
+    >
+        {Template.bind({})}
+    </Story>
+    <Story
+        name="Tertiary - Small"
+        args={{
+            text: 'Button',
+            type: 'tertiary',
+            isSmall: true
+        }}
+    >
+        {Template.bind({})}
+    </Story>
+</Canvas>
+
+## Quaternary
+
+**Reference:** [Zeroheight](https://zeroheight.com/6cad7b420/p/91638b-21-buttons/t/9286ba)<br/>
+**Design mockup:** [Figma](https://www.figma.com/file/LuEmvCRbZSmBwSHFJXSDpF/Web-Library?node-id=1147%3A32688)<br/>
+
+<Canvas>
+    <Story
+        name="Quaternary"
+        args={{
+            text: 'Button',
+            type: 'quaternary'
+        }}
+    >
+        {Template.bind({})}
+    </Story>
+    <Story
+        name="Quaternary - Small"
+        args={{
+            text: 'Button',
+            type: 'quaternary',
+            isSmall: true
+        }}
+    >
+        {Template.bind({})}
+    </Story>
+</Canvas>

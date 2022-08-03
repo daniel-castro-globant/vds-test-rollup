@@ -1,0 +1,21 @@
+{
+  "name": "@vds/design-tokens",
+  "version": "0.3.0",
+  "description": "> TODO: description",
+  "author": "Daniel Castro <johndaniel.castro@globant.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "main.js",
+  "publishConfig": {
+    "registry": "http://localhost:4873"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "style-dictionary": "^3.7.1"
+  },
+  "files": [
+    "build"
+  ]
+}

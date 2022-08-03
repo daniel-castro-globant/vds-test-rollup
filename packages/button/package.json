@@ -1,0 +1,24 @@
+{
+  "name": "@vds/button",
+  "version": "0.2.0",
+  "description": "> TODO: description",
+  "author": "Daniel Castro <johndaniel.castro@globant.com>",
+  "homepage": "",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "http://localhost:4873"
+  },
+  "scripts": {
+    "build": "node ../../scripts/build.js",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "peerDependencies": {
+    "@vds/design-tokens": "^0.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "files": [
+    "src"
+  ],
+  "main": "dist/main.js"
+}

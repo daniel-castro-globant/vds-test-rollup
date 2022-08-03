@@ -1,0 +1,383 @@
+@import '~@vds/design-tokens/build/scss/variables';
+
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url('./fonts/regular.otf');
+}
+
+@font-face {
+    font-family: $vds-font-families-proxima-nova-semibold;
+    src: url('./fonts/semibold.otf');
+}
+
+@font-face {
+    font-family: 'Proxima Nova Light';
+    src: url('./fonts/light.otf');
+}
+
+@font-face {
+    font-family: 'Proxima Nova Black';
+    src: url('./fonts/black.otf');
+}
+
+$primaryFont: 'Proxima Nova Regular', sans-serif;
+$semiBoldFont: $vds-font-families-proxima-nova-semibold, sans-serif;
+$lightFont: 'Proxima Nova Light', sans-serif;
+$blackFont: 'Proxima Nova Black', sans-serif;
+
+/**
+ * Font styles
+ */
+$textStyles: (
+    'zetta': (
+        font-family: $blackFont,
+        font-size: 104px,
+        font-weight: normal,
+        line-height: 84px
+    ),
+    'exa': (
+        font-family: $blackFont,
+        font-size: 72px,
+        font-weight: normal,
+        line-height: 60px
+    ),
+    'iam-heading-desktop': (
+        font-family: $blackFont,
+        font-size: 63px,
+        font-weight: normal,
+        line-height: 54px
+    ),
+    'peta': (
+        font-family: $blackFont,
+        font-size: 60px,
+        font-weight: normal,
+        line-height: 48px
+    ),
+    'demi-peta': (
+        font-family: $blackFont,
+        font-size: 48px,
+        font-weight: normal,
+        line-height: 40px
+    ),
+    'new-font-23': (
+        font-family: $lightFont,
+        font-weight: normal,
+        font-size: 40px,
+        line-height: 46px,
+        letter-spacing: normal
+    ),
+    'iam-heading-mobile': (
+        font-family: $blackFont,
+        font-size: 54px,
+        font-weight: normal,
+        line-height: 48px
+    ),
+    'iam-heading-tablet': (
+        font-family: $blackFont,
+        font-size: 44px,
+        font-weight: normal,
+        line-height: 42px
+    ),
+    'tera-regular-hybrid': (
+        font-family: $primaryFont,
+        font-weight: normal,
+        font-size: 40px,
+        line-height: 46px,
+        letter-spacing: normal
+    ),
+    'peta-32': (
+        font-family: $blackFont,
+        font-size: 32px,
+        font-weight: normal,
+        line-height: 48px
+    ),
+    'hybrid-regular': (
+        font-family: $primaryFont,
+        font-size: 28px,
+        font-weight: normal,
+        line-height: 36px,
+        letter-spacing: -0.2px
+    ),
+    'peta-32-b': (
+        font-family: $lightFont,
+        font-size: 32px,
+        font-weight: normal,
+        line-height: 38px
+    ),
+    'hybrid': (
+        font-family: $primaryFont,
+        font-size: 28px,
+        font-weight: bold,
+        line-height: 36px,
+        letter-spacing: -0.2px
+    ),
+    'tera': (
+        font-family: $blackFont,
+        font-size: 28px,
+        font-weight: normal,
+        line-height: 22px
+    ),
+    'tera-regular': (
+        font-family: $primaryFont,
+        font-size: 28px,
+        font-weight: normal,
+        line-height: 22px
+    ),
+    'tera-bold': (
+        font-family: $primaryFont,
+        font-size: 28px,
+        font-weight: bold,
+        line-height: 32px
+    ),
+    'giga': (
+        font-family: $primaryFont,
+        font-size: 60px,
+        font-weight: bold,
+        line-height: 60px
+    ),
+    'giga-light': (
+        font-family: $lightFont,
+        font-size: 60px,
+        font-weight: normal,
+        line-height: 60px,
+        letter-spacing: -1.5px
+    ),
+    'mega': (
+        font-family: $primaryFont,
+        font-size: 32px,
+        font-weight: bold,
+        line-height: 38px
+    ),
+    'mega-regular': (
+        font-family: $primaryFont,
+        font-size: 32px,
+        font-weight: normal,
+        line-height: 38px
+    ),
+    'mega-light': (
+        font-family: $lightFont,
+        font-size: 32px,
+        font-weight: normal,
+        line-height: 38px,
+        letter-spacing: -0.8px
+    ),
+    'iam-badge-desktop': (
+        font-family: $blackFont,
+        font-size: 24px,
+        font-weight: normal,
+        line-height: 28px,
+        letter-spacing: 0.3px
+    ),
+    'iam-description-desktop': (
+        font-family: $primaryFont,
+        font-size: 22px,
+        font-weight: normal,
+        line-height: 32px
+    ),
+    'iam-badge-mobile': (
+        font-family: $blackFont,
+        font-size: 21px,
+        font-weight: normal,
+        line-height: 21px,
+        letter-spacing: 0.3px
+    ),
+    'iam-description-mobile': (
+        font-family: $primaryFont,
+        font-size: 20px,
+        font-weight: normal,
+        line-height: 27px
+    ),
+    'kilo': (
+        font-family: $semiBoldFont,
+        font-size: 20px,
+        font-weight: normal,
+        line-height: 24px
+    ),
+    'kilo-regular': (
+        font-family: $primaryFont,
+        font-size: 20px,
+        font-weight: normal,
+        line-height: 24px
+    ),
+    'kilo-black': (
+        font-family: $blackFont,
+        font-size: 20px,
+        font-weight: normal,
+        line-height: 24px
+    ),
+    'kilo-light': (
+        font-family: $lightFont,
+        font-size: 20px,
+        font-weight: normal,
+        line-height: 24px,
+        letter-spacing: -0.4px
+    ),
+    'kilo-bold': (
+        font-family: $semiBoldFont,
+        font-size: 20px,
+        font-weight: bold,
+        line-height: 24px
+    ),
+    'hecto': (
+        font-family: $semiBoldFont,
+        font-size: 18px,
+        font-weight: normal,
+        line-height: 22px
+    ),
+    'hecto-regular': (
+        font-family: $primaryFont,
+        font-size: 18px,
+        font-weight: normal,
+        line-height: 22px
+    ),
+    'hecto-bold': (
+        font-family: $primaryFont,
+        font-size: 18px,
+        font-weight: bold,
+        line-height: 22px
+    ),
+    'iam-badge-tablet': (
+        font-family: $blackFont,
+        font-size: 17px,
+        font-weight: normal,
+        line-height: 20px,
+        letter-spacing: 0.3px
+    ),
+    'deci-semi': (
+        font-family: $semiBoldFont,
+        font-size: 16px,
+        font-weight: normal,
+        line-height: 22px
+    ),
+    'deci': (
+        font-family: $primaryFont,
+        font-size: 16px,
+        font-weight: normal,
+        line-height: 22px
+    ),
+    'deci-bold': (
+        font-family: $semiBoldFont,
+        font-size: 16px,
+        font-weight: normal,
+        line-height: 22px
+    ),
+    'deci-black': (
+        font-family: $blackFont,
+        font-size: 16px,
+        font-weight: normal,
+        line-height: 22px
+    ),
+    'deci-light': (
+        font-family: $lightFont,
+        font-size: 16px,
+        font-weight: normal,
+        line-height: 22px,
+        letter-spacing: -0.32px
+    ),
+    'micro': (
+        font-family: $semiBoldFont,
+        font-size: 14px,
+        font-weight: normal,
+        line-height: 16px,
+        letter-spacing: 0.4px
+    ),
+    'micro-button': (
+        font-family: $semiBoldFont,
+        font-size: 15px,
+        font-weight: normal,
+        line-height: 16px,
+        letter-spacing: 0.4px
+    ),
+    'pico': (
+        font-family: $semiBoldFont,
+        font-size: 10px,
+        font-weight: normal,
+        line-height: 14px
+    ),
+    'pico-bold': (
+        font-family: $primaryFont,
+        font-size: 10px,
+        font-weight: bold,
+        line-height: 14px
+    ),
+    'deca': (
+        font-family: $primaryFont,
+        font-size: 18px,
+        font-weight: normal,
+        line-height: 30px
+    ),
+    'centi-semi': (
+        font-family: $semiBoldFont,
+        font-size: 14px,
+        font-weight: normal,
+        line-height: 18px
+    ),
+    'centi': (
+        font-family: $primaryFont,
+        font-size: 14px,
+        font-weight: normal,
+        line-height: 18px
+    ),
+    'centi-light': (
+        font-family: $lightFont,
+        font-size: 14px,
+        font-weight: normal,
+        line-height: 18px
+    ),
+    'milli': (
+        font-family: $primaryFont,
+        font-size: 12px,
+        font-weight: normal,
+        line-height: 14px
+    ),
+    'milli-bold': (
+        font-family: $primaryFont,
+        font-size: 12px,
+        font-weight: bold,
+        line-height: 14px
+    ),
+    'nano': (
+        font-family: $semiBoldFont,
+        font-size: 12px,
+        font-weight: normal,
+        line-height: 14px,
+        letter-spacing: 0.4px
+    ),
+    'nano-regular': (
+        font-family: $primaryFont,
+        font-size: 12px,
+        font-weight: normal,
+        line-height: 14px,
+        letter-spacing: 0.4px
+    ),
+    'ab-test-font-1': (
+        font-family: $blackFont,
+        font-size: 40px,
+        font-weight: 900,
+        line-height: 34px,
+        font-stretch: normal,
+        font-style: normal,
+        letter-spacing: normal
+    ),
+    'ab-test-font-2': (
+        font-family: $primaryFont,
+        font-weigt: bold,
+        font-size: 40px,
+        line-height: 46px,
+        letter-spacing: normal
+    )
+);
+
+/**
+ * mixins for pre-sets font styles
+ * ie: @include font('giga')
+ */
+@mixin font($name: 'deca', $important: false) {
+    $style: map-get($textStyles, $name);
+
+    @if $style {
+        @each $key, $value in $style {
+            #{$key}: $value if($important, !important, null);
+        }
+    }
+}

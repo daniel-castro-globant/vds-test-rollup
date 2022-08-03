@@ -1,0 +1,76 @@
+@import './fonts';
+@import '~@vds/design-tokens/build/scss/variables';
+
+.vds-button {
+    @include font('micro-button');
+
+    border: 0;
+    padding: $vds-spacing-500 $vds-spacing-1100;
+    position: relative;
+    display: inline-block;
+    background: transparent;
+    color: $vds-color-snowwhite;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+    }
+
+    &:hover:before {
+        opacity: 1;
+    }
+
+    &--disabled {
+        background: $vds-color-celestialsphere;
+        color: $vds-color-snowwhite;
+    }
+
+    &--primary {
+        background: $vds-color-p-gradient1;
+    
+        &:before {
+            background: $vds-color-p-gradient2;
+            transition: opacity .4s ease-in-out;
+        }
+    }
+
+    &--quaternary {
+        border: 1px solid $vds-color-p-dark;
+        color: $vds-color-p-dark;
+    }
+
+    &--secondary {
+        border: 1px solid $vds-color-p-light;
+    }
+
+    &--small {
+        @include font('nano');
+    
+        padding: $vds-spacing-400 $vds-spacing-600;
+    }
+
+    &--tertiary {
+        border: 1px solid $vds-color-snowwhite;
+        transition: color .2s ease-in-out;
+
+        &:before {
+            background: $vds-color-snowwhite;
+            transition: opacity .2s ease-in-out;
+        }
+    
+        &:hover {
+            color: $vds-color-singularity;
+        }
+    }
+
+    &__text {
+        position: relative;
+    }
+}
