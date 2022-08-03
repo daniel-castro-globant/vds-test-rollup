@@ -5,7 +5,6 @@
   "author": "Daniel Castro <johndaniel.castro@globant.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "main.js",
   "publishConfig": {
     "registry": "http://localhost:4873"
   },
