@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './Button.scss'
-import A from '@vds/design-tokens';
-console.log(A);
 
 const Button = ({ isSmall, text, type }) => (
     <button

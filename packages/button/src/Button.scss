@@ -1,5 +1,5 @@
 @import './fonts';
-@import '~@vds/design-tokens/build/scss/variables';
+@import '~@vds/design-tokens/dist/scss/variables';
 
 .vds-button {
     @include font('micro-button');
