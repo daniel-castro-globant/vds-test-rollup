@@ -15,4 +15,4 @@ export default {
 
 const Story = (args) => <Avatar {...args} />;
 
-export const Primary = Story.bind({});
+export const Small = Story.bind({});
