@@ -10,6 +10,7 @@
   },
   "scripts": {
     "build": "node main.js",
+    "preversion": "npm run build",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "devDependencies": {
