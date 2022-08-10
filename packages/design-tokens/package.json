@@ -17,6 +17,7 @@
     "style-dictionary": "^3.7.1"
   },
   "files": [
-    "dist", "../../LICENSE"
+    "dist",
+    "../../LICENSE"
   ]
 }
