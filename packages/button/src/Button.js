@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './Button.scss'
 
-const Button = ({ isSmall, text = "Button", type }) => (
+const Button = ({ isSmall, text, type }) => (
     <button
         type="button"
         className={[

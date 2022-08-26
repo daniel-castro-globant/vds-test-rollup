@@ -4,5 +4,6 @@
     "packages/*"
   ],
   "useWorkspaces": true,
-  "version": "independent"
+  "version": "independent",
+  "changelogPreset": "angular-bitbucket-jira"
 }
